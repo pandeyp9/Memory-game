@@ -1,0 +1,24 @@
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    height: 400px;
+    width: 300px;
+}
+
+.g{
+    display: grid;
+    grid-template-columns: 1fr [start] minmax(0px , 300px) [end] 1fr;
+}
+
+.g *{
+    grid-column: start/end;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    text-shadow: 0 0.2rem 4px blue;
+
+}
